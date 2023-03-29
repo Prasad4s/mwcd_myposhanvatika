@@ -169,7 +169,8 @@ def captvatikapic(request):
     form = UploadPictureForm()
     global datauri
     # if request.is_ajax():
-    if request.is_ajax():
+    # if request.is_ajax():
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest': 
         datauri = request.POST['picture']
    
     

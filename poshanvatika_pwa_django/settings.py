@@ -257,3 +257,6 @@ DEFAULT_BREAKPOINTS = {
     'tablet': 767,
     'desktop': None,
 }
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
